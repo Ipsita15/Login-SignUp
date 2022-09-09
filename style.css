@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  /* background: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000') no-repeat center center/cover; */
+  /* background: url('https://th.bing.com/th/id/R.d5368433ae1c23a94417c112714e8014?rik=C%2blqInFt4z6U%2fQ&riu=http%3a%2f%2fprintablegraphics.in%2fwp-content%2fuploads%2f2018%2f01%2fHtml-background-images-in-blue-shades.jpg&ehk=TRrDz3mOtE9oLEdm9co2WItRm9Y9qN4h9g9whRfbgag%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover; */
+  /* background:url('https://th.bing.com/th/id/R.b78639182048dec2e2e9e9b609716b91?rik=pwJe%2bDjXBtQCYQ&riu=http%3a%2f%2fprintablegraphics.in%2fwp-content%2fuploads%2f2018%2f01%2fHtml-background-image.jpg&ehk=CsYXoBIMZX%2fVmcu%2fpE8%2fpXsvklB9KzeoOlduB6co9Mc%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover; */
+  background: url('https://th.bing.com/th/id/R.eea3608ffa26f83b10d7485e185e0566?rik=hYAa169Z%2foEfmw&riu=http%3a%2f%2fhotemailtemplates.com%2ftemplates%2fFree%2fwallpapers%2f1680x1050%2fGlowing+Background.jpg&ehk=4UcNfGqROnpGSnAd7jM7l90yxj736o0UvkM1qhObSpg%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+  /* background: linear-gradient(37deg, #bbbbbb, white); */
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+body, input {
+  font-family: "Poppins", sans-serif;
+  filter: brightness(95%);
+}
+
+.signin-signup {
+  position: absolute;
+  height: 95vh;
+  width: 100vw;
+  /* transition: 1s 0.4s ease-in-out; */
+  display: grid;
+}
+
+form {
+  /* background-color: aquamarine; */
+  background-color: rgb(62 62 62 / 5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 380px;
+  height: 90%;
+  margin: auto;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 20px -10px rgb(94, 94, 94); */
+  box-shadow: 2px 2px 22px 5px rgb(233, 189, 189);
+  border: 3.5px outset rgb(255, 253, 253);
+}
+
+
+.title {
+  font-size: 2.2rem;
+  /* color: #444; */
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  max-width: 330px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+  box-shadow: 0 0 30px -25px;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  /* font-weight: 500; */
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  text-align: center;
+  color:rgb(255, 253, 253);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid rgb(248, 246, 246);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  color:rgb(243, 236, 236);
+}
+
+.social-icon:hover {
+  /* color: #fff; */
+  /* color: red; */
+  /* border-color: #fff; */
+  /* border-color: rgb(125, 139, 221); */
+  transform: translateY(0.2rem) ;
+}
+
+.btn {
+  width: 150px;
+  background-color: #0a0125;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  /* background-color: #4d84e2; */
+  color: black;
+  background-color: rgb(220, 211, 211);
+}
+
+@media (max-width:450px){
+  form{
+    width: 85vw;
+  }
+  .input-field {
+    max-width: 75vw
+  }
+}
+@media (max-width:400px){
+  form{
+    width: 95vw;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(62 62 62 / 0%);
+  }
+  .input-field {
+    max-width: 80vw
+  }
+}
